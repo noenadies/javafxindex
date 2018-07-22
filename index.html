@@ -8,14 +8,33 @@
 			canvas { width: 100%; height: 100% }
 		</style>
 	</head>
+	<script src="jquery-3.3.1.min.js"></script>
 	<body>
-		<div id="id1">
-			<p id="idp" >This is some text in a paragraph.</p>
-			<input type="text" id="id2" value="Some text...">
-		</div>
-		<script src="js/three.js"></script>
-		<script>
-			// Our Javascript will go here.
-		</script>
+	<input type="text" name="bookId" id="bookId" value=""/>  
+	<button onclick="pasar2()">Try it</button>
+	<p id="idc">This is a paragraph.</p>
+<script>
+
+window.dato ="OK"; //$('#bookId').val();
+/*
+ function pasar(){
+ $.ajax({
+      data: {"dato" : dato},
+      url: "hola.php",
+      type: "post",
+      success:  function (response) {
+        alert(response);
+      }
+    });
+
+ }*/
+function pasar2(){
+	document.getElementById("idc").innerHTML = "Paragraph changed!";
+var idppp=document.getElementById("idc").innerHTM=dato;
+	alert(idppp);
+	//document.write(dato);
+}
+ </script>
+
 	</body>
 </html>
